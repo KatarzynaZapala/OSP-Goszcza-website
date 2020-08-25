@@ -1,0 +1,34 @@
+@import "./src/scss/settings/index";
+
+
+
+
+.carousel{
+
+  margin: 0 auto;
+  width: 100%;
+  min-width: 400px;
+  height: 600px;
+  //background-image: url("../osp-app/src/images/fire.jpg");
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  i {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:$font-black-color;
+  }
+  }
+  div{
+    //width: 90%;
+    //display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.carousel_img{
+  width: 100vw;
+  height: 600px;
+}

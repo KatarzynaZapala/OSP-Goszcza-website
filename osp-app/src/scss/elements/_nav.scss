@@ -3,6 +3,7 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+
 }
 
 a {
@@ -15,20 +16,24 @@ a {
   width: 100%;
   background-color: $body-color;
   box-shadow: 1px 1px 5px 0 rgba(0,0,0,.1);
-  z-index: 3;
+  z-index: 1;
 }
 
 .nav_container ul {
   margin: 0;
   padding: 0;
-  background-color: $column-white-color;
+  background-color: rgba(250, 250, 250, 0.5);
   list-style: none;
   text-transform: uppercase;
+  overflow: hidden;
 }
 
 .nav_container li {
+
   @include notebook {
     float: left;
+    display: inline-block;
+
   }
 }
 
@@ -89,7 +94,7 @@ nav .menu_icon .nav_icon {
   display: block;
   height: 100%;
   position: absolute;
-  transition: all .2s ease-out;
+  //transition: all .2s ease-out;
   width: 100%;
 }
 
