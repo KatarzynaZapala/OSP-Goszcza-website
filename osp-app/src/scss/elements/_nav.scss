@@ -3,39 +3,36 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-
 }
 
 a {
   color: $font-black-color;
 }
 
-/* header */
 
-.header {
-  background-color: $body-color;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+.nav_container {
   position: fixed;
   width: 100%;
+  background-color: $body-color;
+  box-shadow: 1px 1px 5px 0 rgba(0,0,0,.1);
   z-index: 3;
 }
 
-.header ul {
+.nav_container ul {
   margin: 0;
   padding: 0;
+  background-color: $column-white-color;
   list-style: none;
-  overflow: hidden;
-  background-color: $colomn-white-color;
   text-transform: uppercase;
 }
 
-.header li {
+.nav_container li {
   @include notebook {
     float: left;
   }
 }
 
-.header li a {
+.nav_container li a {
   display: block;
   padding: 20px 20px;
   border-right: 1px solid $body-color;
@@ -45,14 +42,12 @@ a {
   }
 }
 
-.header li a:hover,
-.header .menu_btn:hover {
-  background-color: $colomn-white-color;
+.nav_container li a:hover,
+.nav_container .menu_btn:hover {
+  background-color: $column-white-color;
 }
 
-
-
-.header .menu {
+.nav_container .menu {
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
@@ -64,9 +59,8 @@ a {
   }
 }
 
-/* menu icon */
 
-.header .menu_icon {
+.nav_container .menu_icon {
   cursor: pointer;
   display: inline-block;
   float: right;
@@ -79,7 +73,7 @@ a {
   }
 }
 
-.header .menu_icon .nav_icon {
+nav .menu_icon .nav_icon {
   background: $footer-color;
   display: block;
   height: 2px;
@@ -88,8 +82,8 @@ a {
   width: 18px;
 }
 
-.header .menu_icon .nav_icon:before,
-.header .menu_icon .nav_icon:after {
+.nav_container .menu_icon .nav_icon:before,
+.nav_container .menu_icon .nav_icon:after {
   background: $footer-color;
   content: '';
   display: block;
@@ -99,20 +93,19 @@ a {
   width: 100%;
 }
 
-.header .menu_icon .nav_icon:before {
+.nav_container .menu_icon .nav_icon:before {
   top: 5px;
 }
 
-.header .menu_icon .nav_icon:after {
+.nav_container .menu_icon .nav_icon:after {
   top: -5px;
 }
 
-/* menu btn */
 
-.header .menu_btn {
+.nav_container .menu_btn {
   display: none;
 }
 
-.header .menu_btn:checked ~ .menu {
+.nav_container .menu_btn:checked ~ .menu {
   max-height: 240px;
 }
