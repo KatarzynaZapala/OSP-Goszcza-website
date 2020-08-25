@@ -1,0 +1,118 @@
+@import "./src/scss/settings/index";
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+a {
+  color: $font-black-color;
+}
+
+/* header */
+
+.header {
+  background-color: $body-color;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: $colomn-white-color;
+  text-transform: uppercase;
+}
+
+.header li {
+  @include notebook {
+    float: left;
+  }
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid $body-color;
+  text-decoration: none;
+  @include notebook{
+    padding: 20px 60px;
+  }
+}
+
+.header li a:hover,
+.header .menu_btn:hover {
+  background-color: $colomn-white-color;
+}
+
+
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  @include notebook{
+    display: flex;
+    justify-content: center;
+    clear: none;
+    max-height: none;
+  }
+}
+
+/* menu icon */
+
+.header .menu_icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+  @include notebook {
+    display: none;
+
+  }
+}
+
+.header .menu_icon .nav_icon {
+  background: $footer-color;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu_icon .nav_icon:before,
+.header .menu_icon .nav_icon:after {
+  background: $footer-color;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu_icon .nav_icon:before {
+  top: 5px;
+}
+
+.header .menu_icon .nav_icon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu_btn {
+  display: none;
+}
+
+.header .menu_btn:checked ~ .menu {
+  max-height: 240px;
+}
