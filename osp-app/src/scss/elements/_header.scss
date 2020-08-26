@@ -2,16 +2,20 @@
 @import "./src/scss/settings/mixins";
 
 .header {
-  padding-top: 10px;
-  padding-bottom: 20px;
+  box-sizing: border-box;
   background-color: $body-color;
+  @include tablet{
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
 
   .header_container {
     max-width: 1000px;
-    margin: 10px auto 120px;
+    margin: 10px auto 20px;
     display: flex;
     justify-content: center;
     background-color: white;
+    border-radius: 10px;
     @include mobile {
       margin: 0 auto 50px;
       align-items: center;
@@ -55,11 +59,11 @@
       line-height: 40px;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
       font-size: 20px;
       text-align: center;
-      padding: 35px 15px;
+      padding: 40px 15px;
       @include mobile {
         padding: 0 15px;
         text-align: center;

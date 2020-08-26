@@ -1,9 +1,16 @@
+@import "./src/scss/settings/index";
+@import "./src/scss/settings/mixins";
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: Roboto, sans-serif;
+  background-color: $body-color;
+  width: 100%;
 }
 
 a {
@@ -12,11 +19,11 @@ a {
 
 h2 {
   //font-family: $font-raleway;
-  font-size: 2.25rem;
+
 }
 
 .container {
-  width: 1352px;
+  width: 100%;
   margin: 0 auto;
 
   //@include notebook {
