@@ -1,0 +1,72 @@
+@import "./src/scss/settings/index";
+@import "./src/scss/settings/mixins";
+
+.header {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: $body-color;
+
+  .header_container {
+    max-width: 1000px;
+    margin: 10px auto 120px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    @include mobile {
+      margin: 0 auto 50px;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .logo {
+      max-width: 140px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 45px;
+      @include mobile {
+        margin: 20px 20px 10px;
+      }
+
+
+      //@include mobile {
+
+      }
+      .logo_osp {
+        width: 150px;
+        height: 160px;
+        @include tablet {
+          width: 200px;
+          height: 200px;
+        }
+      }
+      .logo_grp {
+        width: 130px;
+        height: 160px;
+        padding-bottom: 10px;
+        @include tablet {
+          width: 210px;
+          height: 220px;
+      }
+
+    }
+    .header_text {
+      line-height: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 20px;
+      text-align: center;
+      padding: 35px 15px;
+      @include mobile {
+        padding: 0 15px;
+        text-align: center;
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
+        line-height: 30px;
+      }
+    }
+  }
+}
