@@ -1,0 +1,43 @@
+@import "./src/scss/settings/index";
+@import "./src/scss/settings/mixins";
+
+
+.entry_section {
+  width: 200px;
+  margin-top:35px;
+  margin-left: 23px;
+  background-color: $column-white-color;
+  color: $font-black-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 10px;
+}
+
+.entry__title, .entry__text  {
+  text-align: center;
+  font-size: 14px;
+}
+
+
+
+.entry__input {
+  width: 160px;
+  margin-top: 10px;
+  border: 1px solid $font-black-color;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.entry__btn {
+  font-size: 14px;
+  background-color: orangered;
+  color: #fff;
+  border-radius: 5px;
+  width: 100px;
+  margin-top:10px;
+  text-transform: uppercase;
+}
