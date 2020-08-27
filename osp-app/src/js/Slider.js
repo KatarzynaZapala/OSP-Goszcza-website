@@ -1,18 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import foto1 from "../images/foto1.jpg";
-import foto2 from "../images/foto2.jpg";
-import foto3 from "../images/foto3.jpg";
-import foto4 from "../images/foto4.jpg";
-import foto5 from "../images/foto5.jpg";
-import foto6 from "../images/foto6.jpg";
-import foto7 from "../images/foto7.jpg";
-import foto8 from "../images/foto8.jpg";
-import foto9 from "../images/foto9.jpg";
-import foto10 from "../images/foto10.jpg";
-import foto11 from "../images/foto11.jpg";
-import foto12 from "../images/foto12.jpg";
-import foto13 from "../images/foto13.jpg";
-import foto14 from "../images/foto14.jpg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -22,82 +11,107 @@ function Carousel() {
     const carousel_element = () => {
         if (counter === 0) {
             return (
-                <img className="carousel_img" src={foto1} alt="" />
-            )}
+                <div className={"foto foto3"}/>
+            )
+        }
         if (counter === 1) {
             return (
-                <img className="carousel_img" src={foto2} alt="" />
-            )}
+                <div className={"foto foto2"}/>
+            )
+        }
         if (counter === 2) {
             return (
-                <img className="carousel_img" src={foto3} alt="" />
-            )}
+                <div className={"foto foto1"}/>
+            )
+        }
         if (counter === 3) {
             return (
-                <img className="carousel_img" src={foto4} alt="" />
-            )}
+                <div className={"foto foto4"}/>
+            )
+        }
         if (counter === 4) {
             return (
-                <img className="carousel_img" src={foto5} alt="" />
-            )}
+                <div className={"foto foto5"}/>
+            )
+        }
         if (counter === 5) {
             return (
-                <img className="carousel_img" src={foto6} alt="" />
-            )}
+                <div className={"foto foto6"}/>
+            )
+        }
         if (counter === 6) {
             return (
-                <img className="carousel_img" src={foto7} alt="" />
-            )}
+                <div className={"foto foto7"}/>
+            )
+        }
         if (counter === 7) {
             return (
-                <img className="carousel_img" src={foto8} alt="" />
-            )}
+                <div className={"foto foto8"}/>
+            )
+        }
         if (counter === 8) {
             return (
-                <img className="carousel_img" src={foto9} alt="" />
-            )}
+                <div className={"foto foto9"}/>
+            )
+        }
         if (counter === 9) {
             return (
-                <img className="carousel_img" src={foto10} alt="" />
-            )}
+                <div className={"foto foto10"}/>
+            )
+        }
         if (counter === 10) {
             return (
-                <img className="carousel_img" src={foto11} alt="" />
-            )}
+                <div className={"foto foto11"}/>
+            )
+        }
         if (counter === 11) {
             return (
-                <img className="carousel_img" src={foto12} alt="" />
-            )}
+                <div className={"foto foto12"}/>
+            )
+        }
         if (counter === 12) {
             return (
-                <img className="carousel_img" src={foto13} alt="" />
-            )}
+                <div className={"foto foto13"}/>
+            )
+        }
         if (counter === 13) {
             return (
-                <img className="carousel_img" src={foto14} alt="" />
-            )}
-
+                <div className={"foto foto14"}/>
+            )
+        }
     };
 
     useEffect(() => {
             const timeOut = setTimeout(() => {
-                    if (counter === 13) {setCounter(0)}
-                    else {setCounter(prevState => prevState + 1)}
-
-                },3000
+                    if (counter === 13) {
+                        setCounter(0)
+                    } else {
+                        setCounter(prevState => prevState + 1)
+                    }
+                }, 4000
             );
-            return() => {clearTimeout(timeOut);
+            return () => {
+                clearTimeout(timeOut);
             }
-        },[counter]
+        }, [counter]
     )
+
     const handlePrev = () => {
-        if (counter === 0) {setCounter(2)}
-        else {setCounter(prevState => prevState - 1)}
+        if (counter === 0) {
+            setCounter(2)
+        } else {
+            setCounter(prevState => prevState - 1)
+        }
     }
+
     const handleNext = () => {
-        if (counter === 2) {setCounter(0)}
-        else {setCounter(prevState => prevState + 1)}
+        if (counter === 2) {
+            setCounter(0)
+        } else {
+            setCounter(prevState => prevState + 1)
+        }
     }
+
     return (
         <div className={"carousel"}>
             <i onClick={handlePrev} className="fas fa-chevron-left"/>
@@ -106,4 +120,5 @@ function Carousel() {
         </div>
     );
 }
+
 export default Carousel;

@@ -1,9 +1,10 @@
 import React, {Component} from "react";
 import AlarmNumbers from "./AlarmNumbers";
 import NameApp from "./NameApp";
+import Weather from "./Weather";
 
 export default class WidgetsSection extends Component {
-    render(){
+    render() {
         return (
             <section className="container widget_section_container">
                 <div className="widgets_container">
@@ -13,8 +14,9 @@ export default class WidgetsSection extends Component {
                     <div className="widget alarm_numbers">
                         <AlarmNumbers/>
                     </div>
-                    <div className="widget weather"></div>
-
+                    <div className="widget weather">
+                        <Weather/>
+                    </div>
                 </div>
             </section>
         )

@@ -17,6 +17,7 @@
     .phone_pict {
       width: 100px;
       height: 80px;
+      padding-left:10px;
     }
   }
 
@@ -26,6 +27,7 @@
     justify-content: center;
     width: 200px;
     height: 80px;
+    padding-right: 20px;
 
     p {
       text-align: center;
@@ -33,6 +35,8 @@
       font-family: Roboto, sans-serif;
       color: darkred;
       font-weight: bold;
+      display: inline;
+
     }
   }
 }

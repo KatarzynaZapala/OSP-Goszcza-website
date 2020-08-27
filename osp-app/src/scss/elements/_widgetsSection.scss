@@ -19,30 +19,35 @@
 
 
     .name_application {
-      background-color: $column-white-color;
-      width: 250px;
-      height: 250px;
+      background-color: #e3e2e2;
+      width: 265px;
+      height: 260px;
       border: 1px solid transparent;
-      border-top-right-radius: 50px;
+      border-top-right-radius: 40px;
       margin: 40px 30px;
+      padding-top: 10px;
     }
 
     .alarm_numbers {
-      background-color: $column-white-color;
-      width: 250px;
-      height: 250px;
+      background-color: #e3e2e2;
+      width: 265px;
+      height: 260px;
       border: 1px solid transparent;
-      border-top-right-radius: 50px;
+      border-top-right-radius: 40px;
       margin: 40px 30px;
+      padding-top: 10px;
     }
 
     .weather {
-      background-color: $column-white-color;
-      width: 250px;
-      height: 250px;
+      background-color: #e3e2e2;
+      width: 265px;
+      height: 260px;
       border: 1px solid transparent;
-      border-top-right-radius: 50px;
+      border-top-right-radius: 40px;
       margin: 40px 30px;
+      padding-top: 10px;
+      padding-left: 2px;
+
     }
 
   }

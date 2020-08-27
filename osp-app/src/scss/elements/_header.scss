@@ -4,8 +4,10 @@
 .header {
   box-sizing: border-box;
   background-color: $body-color;
+  font-family: 'Raleway', sans-serif;
+
   @include tablet{
-    padding-top: 10px;
+    padding-top: 5px;
     padding-bottom: 5px;
   }
 

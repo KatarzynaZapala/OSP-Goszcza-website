@@ -14,8 +14,8 @@ a {
 .nav_container {
   position: fixed;
   width: 100%;
-  background-color: $body-color;
-  box-shadow: 1px 1px 5px 0 rgba(0,0,0,.1);
+  background-color: rgba(250, 250, 250, 0.6);
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .1);
   z-index: 1;
 }
 
@@ -42,7 +42,7 @@ a {
   padding: 20px 20px;
   border-right: 1px solid $body-color;
   text-decoration: none;
-  @include notebook{
+  @include notebook {
     padding: 20px 60px;
   }
 }
@@ -56,7 +56,7 @@ a {
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
-  @include notebook{
+  @include notebook {
     display: flex;
     justify-content: center;
     clear: none;
