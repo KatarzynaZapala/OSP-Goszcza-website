@@ -34,14 +34,14 @@
       //width: 100vw;
     }
     @include notebook {
-      height: 680px;
+      height: 650px;
       width: 100vw;
       right: 1%;
     }
   }
 
   .fa-chevron-left {
-    position: fixed;
+    position: absolute;
     z-index: 2;
     width: 20px;
     height: 20px;
@@ -65,7 +65,7 @@
   }
 
   .fa-chevron-right {
-    position: fixed;
+    position: absolute;
     z-index: 2;
     width: 20px;
     height: 20px;

@@ -99,14 +99,14 @@ function Carousel() {
     const handlePrev = () => {
     //     console.log("test");
         if (counter === 0) {
-            setCounter(2)
+            setCounter(13)
         } else {
             setCounter(prevState => prevState - 1)
         }
     }
 
     const handleNext = () => {
-        if (counter === 2) {
+        if (counter === 13) {
             setCounter(0)
         } else {
             setCounter(prevState => prevState + 1)

@@ -4,10 +4,11 @@ import Nav from "./js/Nav";
 import Slider from "./js/Slider";
 import Header from "./js/Header";
 import WidgetsSection from "./js/WidgetsSection";
+import RescueSection from "./js/RescueSection";
+import FireFightersSection from "./js/FireFitersSection";
 
 
-//tu function App() { return ( <> komponenty pokolei </> i export default App;
-//
+
 function App() {
   return (
       <>
@@ -15,6 +16,8 @@ function App() {
       <Slider/>
       <Header/>
       <WidgetsSection/>
+      <RescueSection/>
+      <FireFightersSection/>
 
       </>
 

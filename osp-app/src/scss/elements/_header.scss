@@ -32,7 +32,7 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      margin: 45px;
+      margin: 20px 40px;
       @include mobile {
         margin: 20px 20px 10px;
       }
@@ -65,10 +65,14 @@
           width: 190px;
           height: 200px;
           padding-right: 20px;
-          margin: 0 0 0 60px;
+          margin: 0 0 0 25px;
         }
 
+
     }
+
+
+
     .header_text {
       line-height: 40px;
       display: flex;
@@ -85,6 +89,9 @@
         font-family: Roboto, sans-serif;
         font-size: 14px;
         line-height: 30px;
+      }
+      .header_title {
+        margin: 0;
       }
     }
   }
