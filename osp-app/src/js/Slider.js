@@ -97,6 +97,7 @@ function Carousel() {
     )
 
     const handlePrev = () => {
+    //     console.log("test");
         if (counter === 0) {
             setCounter(2)
         } else {
@@ -114,9 +115,11 @@ function Carousel() {
 
     return (
         <div className={"carousel"}>
-            <i onClick={handlePrev} className="fas fa-chevron-left"/>
-            <div> {carousel_element()}</div>
-            <i onClick={handleNext} className="fas fa-chevron-right"/>
+            <FontAwesomeIcon className="prev_arrow" icon={faChevronLeft} onClick={handlePrev}/>
+            {/*<i  className="fas fas-chevron-left"/>*/}
+            <div className="carousel_element"> {carousel_element()}</div>
+            <FontAwesomeIcon className="next_arrow" icon={faChevronRight} onClick={handleNext}/>
+            {/*<i onClick={handleNext} className="fas fa-chevron-right"/>*/}
         </div>
     );
 }

@@ -8,7 +8,7 @@ export default class WidgetsSection extends Component {
         return (
             <section className="container widget_section_container">
                 <div className="widgets_container">
-                    <div className="widget name_application">
+                    <div className="widget name_application" id="content">
                         <NameApp/>
                     </div>
                     <div className="widget alarm_numbers">

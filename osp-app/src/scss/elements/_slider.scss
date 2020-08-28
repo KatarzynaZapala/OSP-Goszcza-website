@@ -2,14 +2,16 @@
 
 .carousel {
   box-sizing: border-box;
-  //margin: 0 auto;
-  max-width: 100vh;
-  min-width: 400px;
-  //height: 600px;
+  max-width: 100vw;
   display: flex;
   justify-content: center;
   text-align: center;
-  flex-shrink: 1 ;
+  flex-shrink: 1;
+
+  .carousel_element {
+    box-sizing: border-box;
+    width: 100%;
+  }
 
   i {
     display: flex;
@@ -23,19 +25,67 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100vw;
+    //width: 100vw;
     height: 320px;
     margin-top: 59px;
+    z-index: 1;
     @include tablet {
-      height: 500px ;
-      width: 100vw;
+      height: 500px;
+      //width: 100vw;
     }
-    @include notebook{
+    @include notebook {
       height: 680px;
       width: 100vw;
+      right: 1%;
     }
   }
 
+  .fa-chevron-left {
+    position: fixed;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    color: #e2dfdf;
+    left: 3%;
+    top: 20%;
+    @include tablet {
+      top: 30%;
+      width: 30px;
+      height: 30px;
+
+    }
+    @include notebook {
+      top: 38%;
+      width: 50px;
+      height: 50px;
+      left: 1%;
+    }
+
+
+  }
+
+  .fa-chevron-right {
+    position: fixed;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    color: #e2dfdf;
+    right: 3%;
+    top: 20%;
+    @include tablet {
+      top: 30%;
+      width: 30px;
+      height: 30px;
+    }
+    @include notebook {
+      top: 38%;
+      width: 50px;
+      height: 50px;
+    }
+
+
+  }
+
   .foto1 {
     @extend %foto;
     background-image: url("/image/foto1.jpg");
@@ -45,54 +95,67 @@
     @extend %foto;
     background-image: url("/image/foto1.jpg");
   }
+
   .foto2 {
     @extend %foto;
     background-image: url("/image/foto2.jpg");
   }
+
   .foto3 {
     @extend %foto;
     background-image: url("/image/foto3.jpg");
   }
+
   .foto4 {
     @extend %foto;
     background-image: url("/image/foto4.jpg");
   }
+
   .foto5 {
     @extend %foto;
     background-image: url("/image/foto5.jpg");
   }
+
   .foto6 {
     @extend %foto;
     background-image: url("/image/foto6.jpg");
   }
+
   .foto7 {
     @extend %foto;
     background-image: url("/image/foto7.jpg");
   }
+
   .foto8 {
     @extend %foto;
     background-image: url("/image/foto8.jpg");
   }
+
   .foto9 {
     @extend %foto;
     background-image: url("/image/foto9.jpg");
   }
+
   .foto10 {
     @extend %foto;
     background-image: url("/image/foto10.jpg");
   }
+
   .foto11 {
     @extend %foto;
     background-image: url("/image/foto11.jpg");
   }
+
   .foto12 {
     @extend %foto;
     background-image: url("/image/foto12.jpg");
   }
+
   .foto13 {
     @extend %foto;
     background-image: url("/image/foto13.jpg");
   }
+
   .foto14 {
     @extend %foto;
     background-image: url("/image/foto14.jpg");

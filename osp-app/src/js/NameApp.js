@@ -1,42 +1,50 @@
 import React, {Component} from 'react';
 
-export default class NameForm extends Component {
-    constructor(props) {
-        super(props);
-        this.handleSubmit = this.handleSubmit.bind(this);
-        this.input = React.createRef();
-    }
-
-    handleSubmit(event) {
-        alert(this.input.current.value + "" + " dołącz do nas! \nNasza grupa poszukiwawczo - ratownicza wspiera Policję w akcjach poszukiwawczych. W pracy towarzyszą nam specjalnie wyszkolone psy ratownicze. Jeśli chcesz pomagać ludziom, lubisz psy i zabawę z nimi, nie boisz się nocy w lesie, chętnie spędzasz czas z ciekawymi ludźmi i pasjonuje Cię aktywny tryb życia - DOŁĄCZ DO NAS! \n\nZadzwoń do Grupy Ratowniczo Poszukiwawczej OSP Goszcza: \n608 439 323");
-        event.preventDefault();
-    }
-
-
+class Popup extends Component{
     render() {
         return (
-            <form className="entry_section" onSubmit={this.handleSubmit}>
-                 <p className="entry__text"> Lubisz pomagać ludziom? <br/>Lubisz psy i zabawę z nimi? <br/>Lubisz spędzasz czas z ciekawymi ludźmi <br/>Pasjonuje Cię aktywny tryb życia?</p>
-
-                    <input className="entry__input" type="text" ref={this.input} />
-
-                <input className="entry__btn" type="submit" value="klik" />
-            </form>
+            <div className='popup'>
+                <div className='popup_inner'>
+                    <h1 className="popup__header"> {this.props.text + " " +"dołącz do nas! "}</h1>
+                    <p className="popup__text">{"Nasza grupa poszukiwawczo - ratownicza wspiera Policję w akcjach poszukiwawczych. W pracy towarzyszą nam specjalnie wyszkolone psy ratownicze. Jeśli chcesz pomagać ludziom, lubisz psy i zabawę z nimi, nie boisz się nocy w lesie, chętnie spędzasz czas z ciekawymi ludźmi i pasjonuje Cię aktywny tryb życia - dołącz do nas! "}
+                    </p>
+                    <p className="popup__text_2">{"Zadzwoń do Grupy Ratowniczo Poszukiwawczej OSP Goszcza:"}</p>
+                    <p className="popup__number">{"608 439 323"}</p>
+                    <button className="popup__btn" onClick={this.props.closePopup}>czekamy na Ciebie!</button>
+                </div>
+            </div>
         );
     }
 }
-//
-//
-//     render() {
-//         return (
-//             <div className="entry_section">
-//
-//                 <p className="entry__text"> Lubisz pomagać ludziom? <br/>Lubisz psy i zabawę z nimi? <br/>Lubisz spędzasz czas z ciekawymi ludźmi <br/>Pasjonuje Cię aktywny tryb życia?</p>
-//                 <p style={{color:"red", fontSize: "12px"}}>{this.state.nameErr}</p>
-//                 < input className="entry__input" type="text" onChange={this.handleChange} value={this.state.name} placeholder="podaj swoje imię"/>
-//                 <button className="entry__btn" onClick={this.handleClick}>Klik</button>
-//             </div>
-//         )
-//     }
-// }
-//
+export default class  NameApp extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            showPopup: false
+        };
+        this.input = React.createRef()
+
+    }
+    togglePopup() {
+        this.setState({
+            showPopup: !this.state.showPopup
+        });
+    }
+    render() {
+        return (
+            <div className='entry_section'>
+                <p className="entry__text"> Lubisz pomagać ludziom? <br/>Lubisz psy i zabawę z nimi? <br/>Lubisz spędzasz czas z ciekawymi ludźmi <br/>Pasjonuje Cię aktywny tryb życia?</p>
+                <input className="entry__input" type="text" ref={this.input} />
+                <button className="entry__btn"  onClick={this.togglePopup.bind(this)}>sprawdź</button>
+                     {this.state.showPopup ?
+                    <Popup
+                        text={this.input.current.value}
+                        closePopup={this.togglePopup.bind(this)}
+                    />
+                    : null
+                }
+            </div>
+        );
+    }
+};
+

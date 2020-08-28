@@ -5,6 +5,8 @@
   box-sizing: border-box;
   background-color: $body-color;
   font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  color: $header-color;
 
   @include tablet{
     padding-top: 5px;
@@ -43,6 +45,10 @@
         width: 150px;
         height: 160px;
         @include tablet {
+          width: 180px;
+          height:180px;
+        }
+        @include notebook {
           width: 200px;
           height: 200px;
         }
@@ -52,9 +58,15 @@
         height: 160px;
         padding-bottom: 10px;
         @include tablet {
-          width: 210px;
-          height: 220px;
+          width: 180px;
+          height: 200px;
       }
+        @include notebook {
+          width: 190px;
+          height: 200px;
+          padding-right: 20px;
+          margin: 0 0 0 60px;
+        }
 
     }
     .header_text {
@@ -66,6 +78,7 @@
       font-size: 20px;
       text-align: center;
       padding: 40px 15px;
+      margin: 0;
       @include mobile {
         padding: 0 15px;
         text-align: center;
