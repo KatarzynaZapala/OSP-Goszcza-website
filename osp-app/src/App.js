@@ -7,6 +7,7 @@ import WidgetsSection from "./js/WidgetsSection";
 import RescueSection from "./js/RescueSection";
 import FireFightersSection from "./js/FireFitersSection";
 import Map from "./js/Map"
+import ActionSection from "./js/ActionSection";
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
             <WidgetsSection/>
             <RescueSection/>
             <FireFightersSection/>
-            <Map/>
+            <ActionSection/>
 
 
         </>

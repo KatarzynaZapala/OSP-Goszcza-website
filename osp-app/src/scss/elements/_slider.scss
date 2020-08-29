@@ -2,7 +2,7 @@
 
 .carousel {
   box-sizing: border-box;
-  max-width: 100vw;
+  max-width: 100vw ;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -48,6 +48,7 @@
     color: #e2dfdf;
     left: 3%;
     top: 20%;
+    cursor: pointer;
     @include tablet {
       top: 30%;
       width: 30px;
@@ -72,6 +73,7 @@
     color: #e2dfdf;
     right: 3%;
     top: 20%;
+    cursor: pointer;
     @include tablet {
       top: 30%;
       width: 30px;

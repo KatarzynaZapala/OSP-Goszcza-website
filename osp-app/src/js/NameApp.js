@@ -37,8 +37,8 @@ export default class  NameApp extends Component {
     render() {
         return (
             <form className='entry_section' onSubmit={this.togglePopup.bind(this)}>
-                <p className="entry__text"> Lubisz pomagać ludziom? <br/>Lubisz psy i zabawę z nimi? <br/>Lubisz spędzasz czas z ciekawymi ludźmi <br/>Pasjonuje Cię aktywny tryb życia?</p>
-                <input className="entry__input" type="text" ref={this.input} />
+                <p className="entry__text"> Lubisz pomagać? <br/>Lubisz psy i zabawę z nimi? <br/>Lubisz spędzasz czas z ciekawymi ludźmi <br/>Pasjonuje Cię aktywny tryb życia?</p>
+                <input className="entry__input" type="text" placeholder="napisz swoje imię" ref={this.input} />
                 <button className="entry__btn"  >sprawdź</button>
                      {this.state.showPopup ?
                     <Popup

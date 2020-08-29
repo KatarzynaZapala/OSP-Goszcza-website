@@ -56,6 +56,7 @@
   bottom: 0;
   margin: auto;
   background-color: rgba(0,0,0, 0.5);
+
 }
 .popup_inner {
   position: absolute;
@@ -70,6 +71,7 @@
   height: 460px;
   border-top-right-radius: 20px;
   text-align: center;
+
 
   @include notebook{
     width: 550px;
@@ -88,6 +90,7 @@
   color: $header-color;
   padding-bottom: 20px;
   font-weight: bold;
+
 }
 
 .popup__text_2 {

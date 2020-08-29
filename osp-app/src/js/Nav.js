@@ -10,8 +10,10 @@ export default class Nav extends Component {
                     <ul className="menu">
                         <li><a href="https://www.facebook.com/GPRGoszcza">Aktualności</a></li>
                         <li><a href="#rescuers">Ratownicy</a></li>
-                        <li><a href="#firefighters">Strażacy</a></li>
+                        <li><a href="#firefighters">akcje</a></li>
+                        <li><a href="#dogs">psy</a></li>
                         <li><a href="#contact">Kontakt</a></li>
+
                     </ul>
                 </nav>
 
