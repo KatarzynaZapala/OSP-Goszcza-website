@@ -11,7 +11,7 @@
   margin-left: 40px;
 
   .alarm_pict {
-    padding-top: 70px;
+    padding-top: 100px;
     padding-left:10px;
 
     .phone_pict {
@@ -22,7 +22,7 @@
   }
 
   .alarm_text {
-    padding-top: 30px;
+    padding-top: 20px;
     display: flex;
     justify-content: center;
     width: 200px;
@@ -38,5 +38,20 @@
       display: inline;
 
     }
+
+  }
+  .geo_btn {
+    font-size: 12px;
+    background-color: orangered;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    margin-left: 15px;
+    cursor: pointer;
+
+
   }
 }

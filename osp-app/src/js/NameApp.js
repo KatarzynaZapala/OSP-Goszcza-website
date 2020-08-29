@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 
+
+
+
 class Popup extends Component{
     render() {
         return (
@@ -25,17 +28,18 @@ export default class  NameApp extends Component {
         this.input = React.createRef()
 
     }
-    togglePopup() {
+    togglePopup(e) {
+        e.preventDefault()
         this.setState({
             showPopup: !this.state.showPopup
         });
     }
     render() {
         return (
-            <div className='entry_section'>
+            <form className='entry_section' onSubmit={this.togglePopup.bind(this)}>
                 <p className="entry__text"> Lubisz pomagać ludziom? <br/>Lubisz psy i zabawę z nimi? <br/>Lubisz spędzasz czas z ciekawymi ludźmi <br/>Pasjonuje Cię aktywny tryb życia?</p>
                 <input className="entry__input" type="text" ref={this.input} />
-                <button className="entry__btn"  onClick={this.togglePopup.bind(this)}>sprawdź</button>
+                <button className="entry__btn"  >sprawdź</button>
                      {this.state.showPopup ?
                     <Popup
                         text={this.input.current.value}
@@ -43,7 +47,7 @@ export default class  NameApp extends Component {
                     />
                     : null
                 }
-            </div>
+            </form>
         );
     }
 };
