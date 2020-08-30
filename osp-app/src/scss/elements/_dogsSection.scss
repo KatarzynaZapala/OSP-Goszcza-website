@@ -10,6 +10,9 @@
   @include tablet {
     justify-content: flex-start;
   }
+  @include notebook {
+    padding-bottom: 20px;
+  }
 
   .dog_container {
     display: flex;

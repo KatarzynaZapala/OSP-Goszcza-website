@@ -5,7 +5,7 @@ import React, {Component} from "react";
 export default class DogsSection extends Component {
     render() {
         return (
-            <div className="section_dog_container">
+            <div className="section_dog_container" id="dogs">
                 <div className="dog_container">
                 <div className="dog_box">
                     <div className="dog_header">

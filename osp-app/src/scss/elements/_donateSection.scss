@@ -1,0 +1,40 @@
+@import "./src/scss/settings/index";
+@import "./src/scss/settings/mixins";
+
+.donate_section_container {
+  margin-top: 20px;
+  box-sizing: border-box;
+  background-color: $column-red-color;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: whitesmoke;
+  height: 320px;
+
+
+
+  @include tablet{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+  }
+  @include notebook{
+    font-size: 16px;
+
+  }
+  .donate_container {
+    max-width: 800px;
+    margin: 0 auto ;
+    padding-top: 50px;
+
+    .donate_header {
+      padding-bottom: 20px;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+    .donate_text {
+      font-weight: 300;
+      font-size: 18px;
+    }
+  }
+
+}
