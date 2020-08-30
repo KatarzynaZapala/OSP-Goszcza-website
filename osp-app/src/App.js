@@ -10,6 +10,7 @@ import Map from "./js/Map"
 import ActionSection from "./js/ActionSection";
 import DogsSection from "./js/DogsSection";
 import DonateSection from "./js/DonateSection";
+import Footer from "./js/Footer";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <ActionSection/>
             <DogsSection/>
             <DonateSection/>
+            <Footer/>
 
 
         </>

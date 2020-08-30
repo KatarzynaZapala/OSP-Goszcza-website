@@ -7,6 +7,8 @@
   justify-content: center;
   width: 100%;
   background-color: $section-color;
+
+
   @include tablet {
     justify-content: flex-start;
   }
@@ -20,12 +22,18 @@
     justify-content: center;
     padding-top: 40px;
 
+
+
+
     .dog_box {
 
       width: 310px;
       height: 310px;
       cursor: pointer;
       background-color: $section-color;
+      transition: 1s ease-in-out;
+
+
       //width: 100%;
 
       .dog_header {
@@ -47,6 +55,7 @@
         background-size: cover;
         border-top-right-radius: 40px;
 
+
       }
 
       .dog_text {
@@ -62,6 +71,7 @@
         border-top-right-radius: 40px;
         font-size: 14px;
 
+
       }
       .dog_picture_first  {
         background-image: url("/image/pies.jpg");
@@ -69,6 +79,8 @@
       }
       .dog_text_first {
         background-image: url("/image/pies.jpg");
+
+
       }
 
       .dog_picture_second  {
@@ -90,14 +102,17 @@
 
     .hidden {
       display: none;
+
     }
 
     .dog_box:hover > .visible {
       display: none;
+
     }
 
     .dog_box:hover > .hidden {
       display: block;
+
     }
   }
 }
