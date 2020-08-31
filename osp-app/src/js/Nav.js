@@ -8,7 +8,7 @@ export default class Nav extends Component {
                     <input className="menu_btn" type="checkbox" id="menu_btn"/>
                     <label className="menu_icon" htmlFor="menu_btn"><span className="nav_icon"></span></label>
                     <ul className="menu">
-                        <li><a href="https://www.facebook.com/GPRGoszcza">Aktualności</a></li>
+                        <li><a href="https://www.facebook.com/GPRGoszcza" target="_blank" >Aktualności</a></li>
                         <li><a href="#rescuers">Ratownicy</a></li>
                         <li><a href="#firefighters">akcje</a></li>
                         <li><a href="#dogs">psy</a></li>

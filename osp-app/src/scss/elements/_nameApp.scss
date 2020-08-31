@@ -14,6 +14,8 @@
   align-items: center;
   font-family: 'Roboto', sans-serif;
   padding-bottom: 10px;
+  animation: fadeIn 3s;
+
 }
 
  .entry__text  {
@@ -30,6 +32,7 @@
   border-radius: 5px;
   padding: 10px;
   text-align: center;
+
 }
 
 .entry__btn {
@@ -43,6 +46,9 @@
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+  transition: .3s ease-in;
+
+
 
 }
 
@@ -57,6 +63,8 @@
   margin: auto;
   background-color: rgba(0,0,0, 0.5);
 
+
+
 }
 .popup_inner {
   position: absolute;
@@ -69,8 +77,10 @@
   background: #e9e9e9;
   width: 300px;
   height: 460px;
-  border-top-right-radius: 20px;
+  border-top-right-radius: 40px;
   text-align: center;
+
+
 
 
   @include notebook{
@@ -97,11 +107,13 @@
   display: inline-block;
   padding-top: 20px;
 
+
 }
 
 .popup__number {
   font-size: 20px;
   color: red;
+
 
 }
 
@@ -114,5 +126,6 @@
   height: 30px;
   margin-top:20px;
   text-transform: uppercase;
+
 
 }

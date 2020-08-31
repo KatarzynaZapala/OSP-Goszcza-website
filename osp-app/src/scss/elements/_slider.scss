@@ -20,7 +20,6 @@
     align-items: center;
     justify-content: space-between;
     color: $font-black-color;
-
   }
 
 
@@ -28,14 +27,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    //width: 100vw;
     height: 320px;
     margin-top: 59px;
     z-index: 1;
-    transition: .4s;
+    transition: .3s ease-in-out;
     @include tablet {
       height: 500px;
-      //width: 100vw;
     }
     @include notebook {
       height: 650px;

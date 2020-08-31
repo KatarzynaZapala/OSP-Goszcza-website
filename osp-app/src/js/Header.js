@@ -9,7 +9,7 @@ export default class Header extends Component {
             <header className="header">
                 <section className="header_container">
                     <div className="logo">
-                        <a href="https://www.facebook.com/GPRGoszcza">
+                        <a target="_blank" href="https://www.facebook.com/GPRGoszcza">
                             <img className="logo_osp" src={GRPLogo} alt="Grupa Poszukiwawczo-Ratownicza w Goszczy"/>
                         </a>
                     </div>
@@ -18,7 +18,7 @@ export default class Header extends Component {
                             Pożarnej <br/>w Goszczy</h1>
                     </div>
                     <div className="logo ">
-                        <a className="logo_grp" href="https://www.facebook.com/ospgoszcza">
+                        <a target="_blank" className="logo_grp" href="https://www.facebook.com/ospgoszcza">
                             <img className="logo_grp" src={OSPGoszcza} alt="Ochotnicza Straż Pożarna w Goszczy"/>
                         </a>
                     </div>

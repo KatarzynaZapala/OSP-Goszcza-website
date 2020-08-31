@@ -12,7 +12,7 @@ export default class Footer extends Component {
                         Pożarnej <br/> w Goszczy
                     </div>
                     <div className="footer_box footer_address">
-                        <a href="https://www.google.pl/maps/place/Ochotnicza+Stra%C5%BC+Po%C5%BCarna+w+Goszczy/@50.1847934,20.0616094,14.75z/data=!4m5!3m4!1s0x47165203e5e493fb:0xa0175a3905e6e394!8m2!3d50.1867338!4d20.070368">
+                        <a target="_blank" href="https://www.google.pl/maps/place/Ochotnicza+Stra%C5%BC+Po%C5%BCarna+w+Goszczy/@50.1847934,20.0616094,14.75z/data=!4m5!3m4!1s0x47165203e5e493fb:0xa0175a3905e6e394!8m2!3d50.1867338!4d20.070368">
                             <p>adres</p>
                             <button>Sprawdź na mapie</button>
                         </a>
@@ -22,7 +22,7 @@ export default class Footer extends Component {
                             <a href="mailto:">email</a>
                     </div>
                     <div className="footer_box footer_fb">
-                        <a href="https://www.facebook.com/GPRGoszcza">
+                        <a target="_blank" href="https://www.facebook.com/GPRGoszcza">
                             <FontAwesomeIcon className="prev_arrow" icon={faFacebookSquare}/>
                         </a>
                     </div>
