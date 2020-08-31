@@ -37,6 +37,9 @@
       border-top-right-radius: 40px;
       margin: 0 30px 20px 30px;
       padding-top: 10px;
+      @include tablet {
+        margin: 30px 30px 20px 30px;
+      }
     }
 
     .weather {
@@ -48,6 +51,9 @@
       margin: 0 30px 40px 30px;
       padding-top: 10px;
       padding-left: 2px;
+      @include tablet {
+        margin: 30px 30px 20px 30px;
+      }
 
     }
 

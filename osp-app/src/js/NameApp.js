@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import { CSSTransition } from 'react-transition-group';
+
 
 
 
@@ -14,6 +16,11 @@ class Popup extends Component{
                     <p className="popup__text_2">{"Zadzwoń do Grupy Ratowniczo Poszukiwawczej OSP Goszcza:"}</p>
                     <p className="popup__number">{"608 439 323"}</p>
                     <button className="popup__btn" onClick={this.props.closePopup}>czekamy na Ciebie!</button>
+                    {/*<CSSTransition*/}
+                    {/*    transitionEnterTimeout={300}*/}
+                    {/*    transitionLeaveTimeout={300}/>*/}
+
+
                 </div>
             </div>
         );

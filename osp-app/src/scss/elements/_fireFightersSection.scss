@@ -18,6 +18,9 @@
     //margin-top: 40px;
     flex-wrap: wrap-reverse;
     //padding-bottom: 40px;
+    @include tablet {
+      padding-bottom: 30px;
+    }
 
     .fire__box {
       width: 100%;
@@ -26,7 +29,8 @@
       color: white;
       padding: 30px;
       @include tablet {
-        width: 600px;
+        width: 800px;
+        height: 380px;
       }
       @include notebook {
         width: 500px;
@@ -38,6 +42,9 @@
         display: inline-block;
         padding: 5px 10px 20px 10px;
         width: 100%;
+        @include tablet {
+          text-align: left;
+        }
 
 
       }
@@ -57,7 +64,7 @@
       background-position: center;
       background-size: cover;
       @include tablet {
-        width: 600px;
+        width: 800px;
       }
       @include notebook {
         width: 500px;

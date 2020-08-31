@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+// import ReactCSSTransitionGroup from 'react-transition-group';
 
 
 
@@ -120,6 +121,15 @@ function Carousel() {
             <div className="carousel_element"> {carousel_element()}</div>
             <FontAwesomeIcon className="next_arrow" icon={faChevronRight} onClick={handleNext}/>
             {/*<i onClick={handleNext} className="fas fa-chevron-right"/>*/}
+            {/*<ReactCSSTransitionGroup */}
+            {/*    transitionName={transition} */}
+            {/*    transitionEnterTimeout={500} */}
+            {/*    transitionLeaveTimeout={500} */}
+            {/*    component="div" className="carousel__slide" */}
+            {/*    transitionAppear={appearTransition} */}
+            {/*    transitionAppearTimeout={1000}>*/}
+            {/*    <div style={style} key={this.state.counter}></div>*/}
+            {/*</ReactCSSTransitionGroup>*/}
         </div>
     );
 }

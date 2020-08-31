@@ -6,6 +6,9 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  @include tablet {
+    margin-top: 30px;
+  }
 
   @include notebook {
     justify-content: center;
@@ -27,7 +30,7 @@
       background-size: cover;
 
       @include tablet {
-        width: 600px;
+        width: 800px;
       }
       @include notebook {
         width: 500px;
@@ -42,7 +45,8 @@
       padding: 30px 30px 40px 30px;
       font-family: "Roboto", sans-serif;
       @include tablet {
-        width: 600px;
+        width: 800px;
+        height: 350px;
       }
       @include notebook {
         width: 500px;
@@ -54,8 +58,10 @@
         text-transform: uppercase;
         display: inline-block;
         padding: 5px 10px 20px 10px;
-
         width: 100%;
+        @include tablet {
+          text-align: left;
+        }
       }
       p.rescue__text {
         text-align: justify;

@@ -27,11 +27,12 @@ export default class Footer extends Component {
                             <FontAwesomeIcon className="fb_icon" icon={faFacebookSquare}/>
                         </a>
                     </div>
-                    <div className="footer_copyright">
-                        <a className="copy_name" href="https://github.com/KatarzynaZapala">&copy;  Katarzyna Danecka-Zapała
-                            <FontAwesomeIcon className="gh_icon" icon={faGithub}/>
-                        </a> </div>
+
                 </div>
+                <div className="footer_copyright">
+                    <a className="copy_name" href="https://github.com/KatarzynaZapala">&copy;  Katarzyna Danecka-Zapała
+                        <FontAwesomeIcon className="gh_icon" icon={faGithub}/>
+                    </a> </div>
 
 
             </footer>

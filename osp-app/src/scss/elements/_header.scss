@@ -7,24 +7,37 @@
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   color: $header-color;
-
   @include tablet{
-    padding-top: 5px;
-    padding-bottom: 5px;
+    //padding-top: 5px;
+    //padding-bottom: 5px;
   }
-
   .header_container {
-    max-width: 1100px;
-    margin: 10px auto 20px;
     display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto -10px;
+    align-items: center;
     justify-content: center;
     background-color: white;
-    border-radius: 10px;
-    @include mobile {
-      margin: 0 auto -10px;
-      align-items: center;
-      flex-direction: column;
+    @include tablet{
+      //margin: 0 auto 20px 0;
+      display: flex;
+      justify-content: center;
+      background-color: white;
+      border-radius: 10px;
+      max-width: 1100px;
+
+        }
+    @include notebook {
+      max-width: 1100px;
+        margin: 10px auto 20px;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        border-radius: 10px;
+
     }
+
+
 
     .logo {
       max-width: 120px;
@@ -76,25 +89,31 @@
 
 
     .header_text {
-      line-height: 40px;
+      line-height: 25px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-size: 25px;
+      font-size: 12px;
       font-weight: 300;
       text-align: center;
-      padding: 22px 15px;
+      padding: 0 15px;
+      font-family: Roboto, sans-serif;
       margin: 0;
       @include tablet {
         font-size: 18px;
       }
-      @include mobile {
-        padding: 0 15px;
-        text-align: center;
-        font-family: Roboto, sans-serif;
-        font-size: 12px;
-        line-height: 25px;
+      @include  notebook {
+        padding: 22px 15px;
+        font-size: 25px;
+        line-height: 40px;
+
+      //@include mobile {
+      //
+      //
+      //  x
+      //
+      //
 
 
       }
