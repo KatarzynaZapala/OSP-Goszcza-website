@@ -25,11 +25,10 @@
       background-color: white;
       border-radius: 10px;
       max-width: 1100px;
-
         }
     @include notebook {
-      max-width: 1100px;
-        margin: 10px auto 20px;
+      width: 1100px;
+        margin: 20px auto 20px auto;
         display: flex;
         justify-content: center;
         background-color: white;
@@ -37,17 +36,15 @@
 
     }
 
-
-
     .logo {
       max-width: 120px;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      margin: 30px 40px;
-      @include mobile {
-        margin: 10px 20px ;
+      margin: 10px 20px ;
+      @include tablet {
+        margin: 30px 40px;
       }
 
 
@@ -62,8 +59,8 @@
           height:180px;
         }
         @include notebook {
-          width: 200px;
-          height: 200px;
+          width: 180px;
+          height: 180px;
         }
       }
       .logo_grp {
@@ -77,8 +74,8 @@
           height: 200px;
       }
         @include notebook {
-          width: 190px;
-          height: 210px;
+          width: 170px;
+          height: 190px;
           padding-right: 10px;
           margin: 0 25px 0 0;
         }
@@ -104,16 +101,10 @@
         font-size: 18px;
       }
       @include  notebook {
-        padding: 22px 15px;
+        padding: 22px 30px;
         font-size: 25px;
         line-height: 40px;
 
-      //@include mobile {
-      //
-      //
-      //  x
-      //
-      //
 
 
       }

@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
-// import ReactCSSTransitionGroup from 'react-transition-group';
+import { TransitionGroup} from 'react-transition-group';
 
 
 
@@ -116,20 +116,17 @@ function Carousel() {
 
     return (
         <div className={"carousel"}>
-            <FontAwesomeIcon className="prev_arrow" icon={faChevronLeft} onClick={handlePrev}/>
-            {/*<i  className="fas fas-chevron-left"/>*/}
+            <TransitionGroup
+                transitionEnterTimeout={1500}
+                transitionLeaveTimeout={1500}
+                component="div" className="carousel_element"
+                transitionAppearTimeout={1500}>
+                <FontAwesomeIcon className="prev_arrow" icon={faChevronLeft} onClick={handlePrev}/>
             <div className="carousel_element"> {carousel_element()}</div>
             <FontAwesomeIcon className="next_arrow" icon={faChevronRight} onClick={handleNext}/>
-            {/*<i onClick={handleNext} className="fas fa-chevron-right"/>*/}
-            {/*<ReactCSSTransitionGroup */}
-            {/*    transitionName={transition} */}
-            {/*    transitionEnterTimeout={500} */}
-            {/*    transitionLeaveTimeout={500} */}
-            {/*    component="div" className="carousel__slide" */}
-            {/*    transitionAppear={appearTransition} */}
-            {/*    transitionAppearTimeout={1000}>*/}
-            {/*    <div style={style} key={this.state.counter}></div>*/}
-            {/*</ReactCSSTransitionGroup>*/}
+            <i onClick={handleNext} className="fas fa-chevron-right"/>
+
+            </TransitionGroup>
         </div>
     );
 }

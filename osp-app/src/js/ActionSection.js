@@ -7,7 +7,7 @@ export default class ActionSection extends Component {
                 <div className="action_container">
                     <div className="action__box action__planners">
                         <h2 className="action__title">PLANIŚCI</h2>
-                        <p className="action__text">  Zadaniem planisty jest określenie, w porozumieniu z Dowódcą, rejonu poszukiwań, zaznaczenie go na mapie w komputerze, a następnie podział na sektory, które przydziela on poszczególnym zespołom ratowniczym do przeszukania. Jego podstawowym sprzętem jest laptop z wczytaną mapą okolicy prowadzenia akcji.
+                        <p className="action__text">  Zadaniem planisty jest określenie,&nbsp;w porozumieniu z Dowódcą, rejonu poszukiwań, zaznaczenie go na mapie w komputerze, a następnie podział na sektory, które przydziela on poszczególnym zespołom ratowniczym do przeszukania. Jego podstawowym sprzętem jest laptop z wczytaną mapą okolicy prowadzenia akcji.
                             <br/><br/>Przez cały czas jej trwania planista koordynuje pracę zespołów w terenie, zbiera od nich informacje i prowadzi notatki z przebiegu działań.
                             <br/><br/>Szkolenie planistów obejmuje cały zakres wiedzy i umiejętności nawigatorów, poszerzony o zagadnienia planowania akcji oraz obsługę programów komputerowych, monitorujących przebieg działań.</p>
                     </div>

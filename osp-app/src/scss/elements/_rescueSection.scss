@@ -12,6 +12,9 @@
 
   @include notebook {
     justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
   }
 
   .rescue_container {
@@ -19,6 +22,7 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 1000px;
+
 
 
     .rescue__foto {
@@ -32,9 +36,11 @@
       @include tablet {
         width: 800px;
       }
+
+
       @include notebook {
         width: 500px;
-        height: 400px;
+        height: 450px;
       }
     }
 
@@ -50,7 +56,7 @@
       }
       @include notebook {
         width: 500px;
-        height: 410px;
+        height: 450px;
       }
 
       h2.rescue__title {
@@ -67,6 +73,10 @@
         text-align: justify;
         display: inline-block;
         padding: 0 15px;
+        @include notebook {
+          text-align: left;
+          padding: 0 10px;
+        }
       }
     }
   }
