@@ -1,24 +1,24 @@
 import React, {Component} from "react";
 
-//navigation with links to sections
+//navigation with links to sections:
 
 export default class Nav extends Component {
     render() {
         return (
-
             <nav className="nav_container">
-                <input className="menu_btn" type="checkbox" id="menu_btn"/>
-                <label className="menu_icon" htmlFor="menu_btn"><span className="nav_icon"></span></label>
+
+                <input className="menu__btn" type="checkbox" id="menu__btn"/>
+                <label className="menu__icon" htmlFor="menu__btn"><span className="nav__icon"/></label>
+
                 <ul className="menu">
-                    <li><a href="https://www.facebook.com/GPRGoszcza" target="_blank">Aktualności</a></li>
-                    <li><a href="#rescuers">Ratownicy</a></li>
+                    <li><a href="https://www.facebook.com/GPRGoszcza" target="_blank">aktualności</a></li>
+                    <li><a href="#rescuers">ratownicy</a></li>
                     <li><a href="#firefighters">akcje</a></li>
                     <li><a href="#dogs">psy</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
-
+                    <li><a href="#contact">kontakt</a></li>
                 </ul>
-            </nav>
 
+            </nav>
         )
     }
 }

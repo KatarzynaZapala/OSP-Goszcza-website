@@ -1,71 +1,70 @@
 @import "./src/scss/settings/index";
 @import "./src/scss/settings/mixins";
 
-.donate_section_container {
+//donate section with account numbers:
 
+//main container:
+
+.donate_section_container {
+  height: 390px;
   box-sizing: border-box;
   background-color: $column-red-color;
   font-family: "Roboto", sans-serif;
-  text-align: center;
   color: whitesmoke;
-  height: 390px;
   font-size: 10px;
+  text-align: center;
   padding-top: 15px;
-  @media (max-width: 400px) {
-    height: 450px;
 
-  }
-
-  @include tablet{
+  @include tablet {
+    height: 250px;
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 16px;
-    height: 250px;
+  }
+  @include notebook {
+    height: 270px;
+    font-size: 16px;
+    margin-bottom: 20px;
   }
 
+  //extra breakpoints for rwd version:
+
+  @media (max-width: 400px) {
+    height: 450px;
+  }
   @media (min-width: 560px) and (max-width: 689px) {
     height: 300px;
-
   }
   @media (min-width: 690px) and (max-width: 792px) {
     height: 250px;
-    
   }
-  @include notebook{
-    font-size: 16px;
-    height: 270px;
-    margin-bottom: 20px;
 
 
-  }
   .donate_container {
     width: 100%;
     height: 100%;
-    margin: 0 auto ;
+    margin: 0 auto;
     padding: 20px;
 
-
-
-    .donate_header {
-      //padding-bottom: 20px;
-      text-transform: uppercase;
-      font-weight: 400;
+    .donate__header {
       font-size: 18px;
+      font-weight: 400;
+      text-transform: uppercase;
+
       @include notebook {
         display: inline-block;
-        //padding-top: 20px;
         padding-bottom: 20px;
       }
     }
-    .donate_text {
+
+    .donate__text {
       font-weight: 300;
       font-size: 16px;
       padding: 0 20px;
+
       @include notebook {
         font-size: 16px;
       }
-
     }
   }
-
 }

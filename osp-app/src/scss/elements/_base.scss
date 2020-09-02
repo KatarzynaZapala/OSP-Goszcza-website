@@ -1,13 +1,13 @@
 @import "./src/scss/settings/index";
 @import "./src/scss/settings/mixins";
 
+//main style settings:
+
 * {
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
   scroll-behavior: smooth;
-
-
 }
 
 body {
@@ -16,21 +16,13 @@ body {
   width: 100% ;
 }
 
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
 }
 
-h2 {
-  //font-family: $font-raleway;
 
-}
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-
-  //@include notebook {
-  //  width: 100%;
-  //  padding: 0 15px;
-  //}
-}

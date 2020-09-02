@@ -3,13 +3,12 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faChevronLeft} from '@fortawesome/free-solid-svg-icons';
 import {faChevronRight} from '@fortawesome/free-solid-svg-icons';
 
-
+//hook useState with beginning state ant function to change state
 
 function Carousel() {
     const [counter, setCounter] = useState(0)
 
-
-// function that change background-image in return div:
+// function that change background-image in returned div:
 
     const carousel_element = () => {
         if (counter === 0) {
@@ -84,7 +83,7 @@ function Carousel() {
         }
     };
 
-//interval, that change pictures in slider in every 4s.:
+//hook useEffect to use setTimeout, that change pictures in slider in every 4s. and actualize setCounter:
 
     useEffect(() => {
             const timeOut = setTimeout(() => {
@@ -101,7 +100,7 @@ function Carousel() {
         }, [counter]
     )
 
-//function to change pictures in slider by using arrows:
+//methods to change pictures in slider by using arrows:
 
     const handlePrev = () => {
         if (counter === 0) {
@@ -119,11 +118,13 @@ function Carousel() {
         }
     }
 
+//return div with event onClick
 
     return (
         <div className={"carousel"}>
             <FontAwesomeIcon className="prev_arrow" icon={faChevronLeft} onClick={handlePrev}/>
             <div className="carousel_element"> {carousel_element()}</div>
+
             <FontAwesomeIcon className="next_arrow" icon={faChevronRight} onClick={handleNext}/>
             <i onClick={handleNext} className="fas fa-chevron-right"/>
         </div>

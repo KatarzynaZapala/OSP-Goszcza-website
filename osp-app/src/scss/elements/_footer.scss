@@ -1,34 +1,35 @@
 @import "./src/scss/settings/index";
 @import "./src/scss/settings/mixins";
 
+
+//footer with address detains
+
+//main container:
+
 .footer_section_container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
   background-color: $footer-color;
-  color: $font-white-color;
   font-family: "Roboto", sans-serif;
-  //margin-top: 20px;
-  @media (min-width: 755px) and (max-width: 793px) {
-    flex-direction: column;
+  color: $font-white-color;
+
+  @include tablet {
+    justify-content: flex-start;
   }
+
   @include notebook {
     display: block;
     margin-bottom: 20px;
   }
 
+  //extra breakpoint for rwd version:
 
-
-
-
-  @include tablet {
-    justify-content: flex-start;
-
+  @media (min-width: 755px) and (max-width: 792px) {
+    flex-direction: column;
   }
-  //@include notebook {
-  //  padding-bottom: 20px;
-  //}
+
 
   .footer_container {
     display: flex;
@@ -36,6 +37,7 @@
     justify-content: center;
     padding-top: 40px;
     text-align: center;
+
     @include tablet {
       width: 1000px;
       flex-wrap: nowrap;
@@ -46,121 +48,130 @@
     }
 
 
-
-    .footer_box {
-
+    .footer__box {
       width: 100%;
       height: 100px;
-
       background-color: $footer-color;
       transition: 2s;
       font-weight: 300;
-
     }
-    .footer_name {
+
+    //name of organisation:
+
+    .footer__name {
       font-size: 18px;
       font-weight: 300;
-      @include  tablet {
+
+      @include tablet {
         font-size: 14px;
         border-right: 1px solid #d7d7d7;
       }
-      @include  notebook {
+      @include notebook {
         font-size: 16px;
         border-right: 1px solid #d7d7d7;
         padding-top: 10px;
         padding-left: 20px;
         line-height: 30px;
-
       }
-
     }
-    .footer_address {
+
+    //address with buttom linked to map:
+
+    .footer__address {
       color: $column-white-color;
       font-size: 16px;
-      @include  tablet {
+
+      @include tablet {
         font-size: 14px;
         border-right: 1px solid #d7d7d7;
       }
-      @include  notebook {
+      @include notebook {
         font-size: 16px;
         border-right: 1px solid #d7d7d7;
         padding-top: 9px;
       }
-      .footer_address_detail {
+
+      .footer__address__detail {
         color: $column-white-color
       }
-      .map_btn {
-        margin-top: 20px;
+
+      //button to map:
+
+      .map__btn {
         width: 130px;
         height: 25px;
+        margin-top: 20px;
         text-align: center;
         border-radius: 20px;
         font-family: "Roboto", sans-serif;
         cursor: pointer;
-        @include  tablet {
+
+        @include tablet {
           font-size: 12px;
         }
       }
     }
-    .footer_number {
+
+    //active phone number and email:
+
+    .footer__number {
       padding-top: 20px;
-      @include  tablet {
+
+      @include tablet {
         font-size: 14px;
         padding-top: 0;
         border-right: 1px solid #d7d7d7;
       }
-      @include  notebook {
+      @include notebook {
         font-size: 16px;
         border-right: 1px solid #d7d7d7;
         padding-top: 10px;
       }
-      .number_item {
+
+      .number__item {
         color: white;
       }
     }
-      .footer_fb {
-        color: white;
-        font-size: 36px;
-        height: 80px;
-        @include tablet {
-          font-size: 40px;
-        }
-        @include notebook {
-          font-size: 60px;
 
-        }
+    //fb icon with link
+
+    .footer__fb {
+      height: 80px;
+      color: white;
+      font-size: 36px;
+
+      @include tablet {
+        font-size: 40px;
       }
-
-
-
+      @include notebook {
+        font-size: 60px;
+      }
     }
+  }
+
+  //copyright info:
+
   .footer_copyright {
+    display: flex;
     padding-bottom: 20px;
     font-size: 10px;
-    display: flex;
 
     @include tablet {
       padding-top: 50px;
-
     }
     @include notebook {
       display: flex;
       font-size: 12px;
       padding-top: 80px;
-
-
-
     }
-    .copy_name {
+
+    .copy__name {
       color: $font-white-color;
 
-      .gh_icon {
+      .gh__icon {
         padding-left: 10px;
         font-size: 20px;
-
       }
-
-
     }
   }
 }

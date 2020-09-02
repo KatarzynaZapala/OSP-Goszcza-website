@@ -1,9 +1,12 @@
 @import "./src/scss/settings/index";
 
+//responsive navigation with hamburger manu:
 
 a {
   color: $font-black-color;
 }
+
+//main container:
 
 .nav_container {
   position: fixed;
@@ -33,13 +36,16 @@ a {
   padding: 20px 20px;
   border-right: 1px solid $body-color;
   text-decoration: none;
+
   @include notebook {
     padding: 20px 60px;
   }
 }
 
+//change after hovering mouse on element:
+
 .nav_container li a:hover,
-.nav_container .menu_btn:hover {
+.nav_container .menu__btn:hover {
   color: darkred;
 }
 
@@ -47,6 +53,7 @@ a {
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
+
   @include notebook {
     display: flex;
     justify-content: center;
@@ -55,13 +62,14 @@ a {
   }
 }
 
-.nav_container .menu_icon {
-  cursor: pointer;
+.nav_container .menu__icon {
   display: inline-block;
-  float: right;
-  padding: 28px 20px;
   position: relative;
+  float: right;
+  cursor: pointer;
+  padding: 28px 20px;
   user-select: none;
+
   @include notebook {
     display: none;
   }
@@ -69,36 +77,36 @@ a {
 
 //hamburger icon
 
-nav .menu_icon .nav_icon {
-  background: $footer-color;
+nav .menu__icon .nav__icon {
   display: block;
-  height: 2px;
   position: relative;
+  height: 2px;
   width: 18px;
-}
-
-.nav_container .menu_icon .nav_icon:before,
-.nav_container .menu_icon .nav_icon:after {
   background: $footer-color;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  width: 100%;
 }
 
-.nav_container .menu_icon .nav_icon:before {
+.nav_container .menu__icon .nav__icon:before,
+.nav_container .menu__icon .nav__icon:after {
+  display: block;
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: $footer-color;
+}
+
+.nav_container .menu__icon .nav__icon:before {
   top: 5px;
 }
 
-.nav_container .menu_icon .nav_icon:after {
+.nav_container .menu__icon .nav__icon:after {
   top: -5px;
 }
 
-.nav_container .menu_btn {
+.nav_container .menu__btn {
   display: none;
 }
 
-.nav_container .menu_btn:checked ~ .menu {
+.nav_container .menu__btn:checked ~ .menu {
   max-height: 240px;
 }

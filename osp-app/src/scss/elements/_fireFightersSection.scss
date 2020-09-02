@@ -1,11 +1,15 @@
 @import "../settings/index";
 @import "../settings/mixins";
 
+//section with info about volunteer Fire Department:
+
+//main container:
+
 .fire_section_container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
 
   @include notebook {
     justify-content: flex-start;
@@ -13,12 +17,11 @@
   }
 
   .fire_container {
+    width: 1000px;
     display: flex;
     justify-content: center;
-    width: 1000px;
-    //margin-top: 40px;
     flex-wrap: wrap-reverse;
-    //padding-bottom: 40px;
+
     @include tablet {
       padding-bottom: 30px;
     }
@@ -29,45 +32,45 @@
       background-color: $column-red-color;
       color: white;
       padding: 30px;
-      @media (max-width: 397px) {
-        height: 660px;
 
-      }
       @include tablet {
         width: 800px;
         height: 380px;
-      }
-      @media (min-width: 563px) and  (max-width: 1024px) {
-        height: 430px;
       }
       @include notebook {
         width: 500px;
         height: 480px;
       }
+//extra breakpoints for rwd version:
+
+      @media (max-width: 397px) {
+        height: 660px;
+      }
+      @media (min-width: 563px) and (max-width: 1024px) {
+        height: 430px;
+      }
+
       h2.fire__title {
+        width: 100%;
+        display: inline-block;
         text-align: center;
         text-transform: uppercase;
-        display: inline-block;
         padding: 5px 10px 20px 10px;
-        width: 100%;
+
         @include tablet {
           text-align: left;
         }
-
-
-
       }
+
       p.fire__text {
-        //text-align: justify;
         display: inline-block;
         padding: 0 15px;
+
         @include notebook {
           text-align: left;
           padding: 0 10px;
         }
       }
-
-
     }
 
     .fire__foto {
@@ -77,6 +80,7 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
+
       @include tablet {
         width: 800px;
       }
@@ -84,10 +88,8 @@
         width: 500px;
         height: 480px;
       }
-
     }
   }
-
 }
 
 

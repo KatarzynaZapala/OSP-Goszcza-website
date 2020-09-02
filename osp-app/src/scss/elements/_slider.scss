@@ -1,18 +1,22 @@
 @import "./src/scss/settings/index";
 
+//slider with carousel
+
+//main container:
+
 .carousel {
+  max-width: 100%;
   box-sizing: border-box;
-  max-width: 100vw ;
   display: flex;
   justify-content: center;
   text-align: center;
   flex-shrink: 1;
 
+  //slider element:
 
   .carousel_element {
-    box-sizing: border-box;
     width: 100%;
-
+    box-sizing: border-box;
   }
 
   i {
@@ -22,12 +26,13 @@
     color: $font-black-color;
   }
 
+  //placeholder for style details for pictures in slider:
 
   %foto {
+    height: 320px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 320px;
     margin-top: 59px;
     z-index: 1;
     transition: .3s ease-in-out;
@@ -42,59 +47,59 @@
     }
   }
 
+  //arrows for changing pictures:
+
+  //left:
+
   .fa-chevron-left {
-    position: absolute;
-    z-index: 2;
     width: 20px;
     height: 20px;
-    color: #e2dfdf;
+    position: absolute;
     left: 3%;
     top: 24%;
+    z-index: 2;
     cursor: pointer;
+    color: #e2dfdf;
+
     @include tablet {
-      top: 33%;
       width: 30px;
       height: 30px;
-
+      top: 33%;
     }
     @include notebook {
-      top: 35%;
       width: 50px;
       height: 50px;
+      top: 35%;
       left: 1%;
     }
-
-
   }
 
+  //right:
+
   .fa-chevron-right {
-    position: absolute;
-    z-index: 2;
     width: 20px;
     height: 20px;
-    color: #e2dfdf;
+    position: absolute;
     right: 3%;
     top: 24%;
     cursor: pointer;
-    font-weight: lighter;
+    z-index: 2;
+    color: #e2dfdf;
+
     @include tablet {
-      top: 33%;
       width: 30px;
       height: 30px;
+      top: 33%;
     }
+
     @include notebook {
-      top: 35%;
       width: 50px;
       height: 50px;
+      top: 35%;
     }
-
-
   }
 
-  .foto1 {
-    @extend %foto;
-    background-image: url("/image/foto1.jpg");
-  }
+  //changing photos in slider:
 
   .foto1 {
     @extend %foto;

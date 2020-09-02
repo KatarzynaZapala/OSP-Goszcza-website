@@ -1,73 +1,72 @@
 @import "./src/scss/settings/index";
 @import "./src/scss/settings/mixins";
 
+//box with input for name
+
+//main container:
 
 .entry_section {
-  width: 200px;
-  margin-top: 25px;
-  //margin-top:35px;
-  //margin-left: 23px;
-  background-color: #e3e2e2;
-  color: $font-black-color;
-  display: flex;
+  width: 200px;display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
+  margin-top: 25px;
   padding-bottom: 10px;
+  background-color: #e3e2e2;
+  font-family: 'Roboto', sans-serif;
+  color: $font-black-color;
   animation: fadeIn 3s;
-
 }
 
- .entry__text  {
+.entry__text {
   text-align: center;
   font-size: 14px;
 }
-
-
 
 .entry__input {
   width: 160px;
-  margin-top: 10px;
   border: 1px solid $font-black-color;
   border-radius: 5px;
+  margin-top: 10px;
   padding: 10px;
   text-align: center;
-
 }
 
 .entry__btn {
-  font-size: 14px;
-  background-color: #4c7eba;
-  color: #fff;
-  border-radius: 5px;
   width: 120px;
   height: 30px;
-  margin-top:10px;
+  font-size: 14px;
+  color: #fff;
   text-transform: uppercase;
+  background-color: #4c7eba;
   border: none;
+  border-radius: 5px;
+  margin-top: 10px;
   cursor: pointer;
   transition: .3s ease-in;
-
-
-
 }
 
+//popup box
+
+//popup container:
+
 .popup {
-  position: fixed;
   width: 100%;
   height: 100%;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
-  background-color: rgba(0,0,0, 0.5);
-
-
-
+  background-color: rgba(0, 0, 0, 0.5);
 }
+
+//popup box with content:
+
 .popup_inner {
+  width: 300px;
+  height: 460px;
   position: absolute;
   left: 5%;
   right: 10%;
@@ -76,57 +75,55 @@
   margin: auto;
   padding: 20px;
   background: #e9e9e9;
-  width: 300px;
-  height: 460px;
   border-top-right-radius: 40px;
   text-align: center;
 
-
-
-
-  @include notebook{
+  @include notebook {
     width: 550px;
     height: 400px;
-    line-height: 30px;
     left: 25%;
     right: 25%;
     top: 25%;
     bottom: 25%;
+    line-height: 30px;
   }
 
+  //extra breakpoint for rwd version:
+
+  @media (min-width: 650px) and (max-width: 1024px) {
+    width: 450px;
+    height: 360px;
+  }
 }
 
 .popup__header {
   text-transform: uppercase;
   color: $header-color;
-  padding-bottom: 20px;
   font-weight: bold;
-
+  padding-bottom: 20px;
 }
 
 .popup__text_2 {
   display: inline-block;
   padding-top: 20px;
-
-
 }
 
 .popup__number {
+  display: block;
   font-size: 20px;
   color: red;
-
-
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  padding-top: 10px;
 }
 
 .popup__btn {
-  font-size: 14px;
-  background-color: $header-color;
-  color: white;
-  border-radius: 10px;
   width: 180px;
   height: 30px;
-  margin-top:20px;
+  font-size: 14px;
+  color: white;
   text-transform: uppercase;
-
-
+  background-color: $header-color;
+  border-radius: 10px;
+  margin-top: 15px;
 }

@@ -1,6 +1,10 @@
 @import "./src/scss/settings/index";
 @import "./src/scss/settings/mixins";
 
+//container for alarm name anf geolocation:
+
+//main container:
+
 .alarm_num_container {
   width: 155px;
   height: 150px;
@@ -10,49 +14,47 @@
   flex-direction: column;
   margin-left: 40px;
 
-  .alarm_pict {
+  .alarm__pict {
     padding-top: 100px;
     padding-left:10px;
 
-    .phone_pict {
+    .phone__pict {
       width: 100px;
       height: 80px;
       padding-left:10px;
     }
   }
 
-  .alarm_text {
-    padding-top: 20px;
+  .alarm__text {
     display: flex;
     justify-content: center;
     width: 200px;
     height: 80px;
     padding-right: 20px;
+    padding-top: 20px;
 
     p {
+      display: inline;
       text-align: center;
       font-size: 20px;
       font-family: Roboto, sans-serif;
       color: darkred;
       font-weight: bold;
-      display: inline;
-
     }
-
   }
+
+//geolocation button:
+
   .geo_btn {
-    font-size: 12px;
-    background-color: orangered;
-    border: none;
-    color: #fff;
-    text-transform: uppercase;
-    border-radius: 5px;
     width: 150px;
     height: 50px;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
     margin-left: 15px;
     cursor: pointer;
-
-
-
   }
 }
