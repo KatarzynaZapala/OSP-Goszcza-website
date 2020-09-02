@@ -2,27 +2,16 @@ import React, {useState, useEffect} from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faChevronLeft} from '@fortawesome/free-solid-svg-icons';
 import {faChevronRight} from '@fortawesome/free-solid-svg-icons';
-import {CSSTransition, TransitionGroup} from 'react-transition-group';
+
 
 
 function Carousel() {
     const [counter, setCounter] = useState(0)
 
-    const carousel_element = () => {
-        // const photos = ['foto1', 'foto2']
-        // return (
-        //     <>
-        //         {photos.map((photo, index) => (
-        //             <CSSTransition
-        //                 in={counter === index}
-        //
-        //             >
-        //                 <div className={`foto ${photo}`} />
-        //             </CSSTransition>
-        //         )}
-        //     </>
-        // )
 
+// function that change background-image in return div:
+
+    const carousel_element = () => {
         if (counter === 0) {
             return (
                 <div className={"foto foto3"}/>
@@ -95,6 +84,8 @@ function Carousel() {
         }
     };
 
+//interval, that change pictures in slider in every 4s.:
+
     useEffect(() => {
             const timeOut = setTimeout(() => {
                     if (counter === 13) {
@@ -110,8 +101,9 @@ function Carousel() {
         }, [counter]
     )
 
+//function to change pictures in slider by using arrows:
+
     const handlePrev = () => {
-    //     console.log("test");
         if (counter === 0) {
             setCounter(13)
         } else {
@@ -127,19 +119,13 @@ function Carousel() {
         }
     }
 
+
     return (
         <div className={"carousel"}>
-            <TransitionGroup
-                transitionEnterTimeout={1500}
-                transitionLeaveTimeout={1500}
-                component="div" className="carousel_element"
-                transitionAppearTimeout={1500}>
-                <FontAwesomeIcon className="prev_arrow" icon={faChevronLeft} onClick={handlePrev}/>
+            <FontAwesomeIcon className="prev_arrow" icon={faChevronLeft} onClick={handlePrev}/>
             <div className="carousel_element"> {carousel_element()}</div>
             <FontAwesomeIcon className="next_arrow" icon={faChevronRight} onClick={handleNext}/>
             <i onClick={handleNext} className="fas fa-chevron-right"/>
-
-            </TransitionGroup>
         </div>
     );
 }
