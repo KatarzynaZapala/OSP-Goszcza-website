@@ -10,11 +10,12 @@
   color: $font-white-color;
   font-family: "Roboto", sans-serif;
   //margin-top: 20px;
+  @media (min-width: 755px) and (max-width: 793px) {
+    flex-direction: column;
+  }
   @include notebook {
     display: block;
     margin-bottom: 20px;
-
-
   }
 
 
@@ -25,9 +26,9 @@
     justify-content: flex-start;
 
   }
-  @include notebook {
-    padding-bottom: 20px;
-  }
+  //@include notebook {
+  //  padding-bottom: 20px;
+  //}
 
   .footer_container {
     display: flex;
@@ -40,7 +41,7 @@
       flex-wrap: nowrap;
     }
     @include notebook {
-      width: 1200px;
+      //width: 1200px;
       flex-wrap: nowrap;
     }
 
@@ -136,6 +137,8 @@
   .footer_copyright {
     padding-bottom: 20px;
     font-size: 10px;
+    display: flex;
+
     @include tablet {
       padding-top: 50px;
 

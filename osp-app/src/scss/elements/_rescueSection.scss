@@ -54,10 +54,15 @@
         width: 800px;
         height: 350px;
       }
+      @media (min-width: 563px) and  (max-width: 1024px){
+        height: 380px;
+
+      }
       @include notebook {
         width: 500px;
         height: 450px;
       }
+
 
       h2.rescue__title {
         text-align: center;

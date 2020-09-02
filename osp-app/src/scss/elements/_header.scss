@@ -14,10 +14,14 @@
   .header_container {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto -10px;
+    margin: 0 auto -10px; ;
     align-items: center;
     justify-content: center;
     background-color: white;
+    @media (min-width:519px) and (max-width: 922px){
+      flex-wrap: nowrap;
+      
+    }
     @include tablet{
       //margin: 0 auto 20px 0;
       display: flex;
@@ -27,12 +31,13 @@
       max-width: 1100px;
         }
     @include notebook {
-      width: 1100px;
+      //width: 1025px;
         margin: 20px auto 20px auto;
         display: flex;
         justify-content: center;
         background-color: white;
         border-radius: 10px;
+      flex-wrap: nowrap;
 
     }
 

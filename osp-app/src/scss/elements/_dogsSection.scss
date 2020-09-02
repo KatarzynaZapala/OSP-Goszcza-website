@@ -28,6 +28,10 @@
       flex-wrap: wrap;
       background-color: #E8E6E6;
     }
+    @media (min-width: 1024px) and (max-width: 1240px) {
+      width: 800px;
+
+    }
     @include notebook {
       background-color: #E8E6E6;
       padding-bottom: 0;

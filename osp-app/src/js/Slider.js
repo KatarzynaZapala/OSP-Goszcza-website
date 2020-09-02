@@ -1,15 +1,28 @@
 import React, {useState, useEffect} from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { TransitionGroup} from 'react-transition-group';
-
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faChevronLeft} from '@fortawesome/free-solid-svg-icons';
+import {faChevronRight} from '@fortawesome/free-solid-svg-icons';
+import {CSSTransition, TransitionGroup} from 'react-transition-group';
 
 
 function Carousel() {
     const [counter, setCounter] = useState(0)
 
     const carousel_element = () => {
+        // const photos = ['foto1', 'foto2']
+        // return (
+        //     <>
+        //         {photos.map((photo, index) => (
+        //             <CSSTransition
+        //                 in={counter === index}
+        //
+        //             >
+        //                 <div className={`foto ${photo}`} />
+        //             </CSSTransition>
+        //         )}
+        //     </>
+        // )
+
         if (counter === 0) {
             return (
                 <div className={"foto foto3"}/>
