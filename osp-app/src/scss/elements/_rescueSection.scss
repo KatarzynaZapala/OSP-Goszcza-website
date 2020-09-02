@@ -70,11 +70,11 @@
         }
       }
       p.rescue__text {
-        text-align: justify;
+        //text-align: justify;
         display: inline-block;
         padding: 0 15px;
         @include notebook {
-          text-align: left;
+          //text-align: left;
           padding: 0 10px;
         }
       }

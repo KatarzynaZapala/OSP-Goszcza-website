@@ -20,6 +20,9 @@
   }
   @include notebook{
     font-size: 16px;
+    height: 270px;
+    margin-bottom: 20px;
+
 
   }
   .donate_container {
@@ -35,11 +38,20 @@
       text-transform: uppercase;
       font-weight: 400;
       font-size: 18px;
+      @include notebook {
+        display: inline-block;
+        //padding-top: 20px;
+        padding-bottom: 20px;
+      }
     }
     .donate_text {
       font-weight: 300;
       font-size: 16px;
       padding: 0 20px;
+      @include notebook {
+        font-size: 16px;
+      }
+
     }
   }
 

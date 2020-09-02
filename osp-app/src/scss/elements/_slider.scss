@@ -31,6 +31,7 @@
     margin-top: 59px;
     z-index: 1;
     transition: .3s ease-in-out;
+
     @include tablet {
       height: 500px;
     }
@@ -48,16 +49,16 @@
     height: 20px;
     color: #e2dfdf;
     left: 3%;
-    top: 20%;
+    top: 24%;
     cursor: pointer;
     @include tablet {
-      top: 30%;
+      top: 33%;
       width: 30px;
       height: 30px;
 
     }
     @include notebook {
-      top: 38%;
+      top: 35%;
       width: 50px;
       height: 50px;
       left: 1%;
@@ -73,16 +74,16 @@
     height: 20px;
     color: #e2dfdf;
     right: 3%;
-    top: 20%;
+    top: 24%;
     cursor: pointer;
     font-weight: lighter;
     @include tablet {
-      top: 30%;
+      top: 33%;
       width: 30px;
       height: 30px;
     }
     @include notebook {
-      top: 38%;
+      top: 35%;
       width: 50px;
       height: 50px;
     }
