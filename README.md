@@ -25,6 +25,8 @@ The Search and Rescue Group from Goszcza operates on a voluntary basis. In actio
 To support the activities of the group, it is necessary to promote it and inform about the possibility of joining the group by new volunteers. The website will support the group in these processes.
 The project is a form of thanks for the hard work of the group members.
 
+The project is written in React components, code with style is in partials imported to the main scss file. Website is responsive and keep the mobile first principle.
+
 ## Screenshots
 ![Example screenshot](./osp-app/src/images/PrtScr1.png) 
 
@@ -41,14 +43,16 @@ The project is a form of thanks for the hard work of the group members.
 * SCSS
 * HTML 5
 * CSS
+* JSON
 * Markdown
 
 ## Features
-To-do list:
+To-do list in future:
 * website management panel
 * current event section
 * form for volunteers
 * gallery
+* slider animation
 
 ## Status
 Project is in progress. The website was created as part of the final front-end bootcamp project.
