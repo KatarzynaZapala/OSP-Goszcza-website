@@ -32,10 +32,7 @@ The project is a form of thanks for the hard work of the group members.
 ![Example screenshot](./osp-app/src/images/PrtScr2.png) 
 
 
-![Example screenshot](./osp-app/src/images/PrtScr4.png) 
-
-
-![Example screenshot](./osp-app/src/images/PrtScr3.png) 
+![Example screenshot](./osp-app/src/images/PrtScr4.png)    ![Example screenshot](./osp-app/src/images/PrtScr3.png) 
 
 
 ## Technologies
