@@ -1,3 +1,5 @@
+//components imported from js directory:
+
 import React from 'react';
 import './App.scss';
 import Nav from "./js/Nav";

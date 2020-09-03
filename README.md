@@ -28,13 +28,21 @@ The project is a form of thanks for the hard work of the group members.
 The project is written in React components, code with style is in partials imported to the main scss file. Website is responsive and keep the mobile first principle.
 
 ## Screenshots
+* opening section
+
 ![Example screenshot](./osp-app/src/images/PrtScr1.png) 
 
+* info section
 
 ![Example screenshot](./osp-app/src/images/PrtScr2.png) 
 
+*tablet verfion
 
-![Example screenshot](./osp-app/src/images/PrtScr4.png)    ![Example screenshot](./osp-app/src/images/PrtScr3.png) 
+![Example screenshot](./osp-app/src/images/PrtScr4.png)   
+
+* mobile version
+
+![Example screenshot](./osp-app/src/images/PrtScr3.png) 
 
 
 ## Technologies
