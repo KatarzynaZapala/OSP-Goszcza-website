@@ -36,7 +36,7 @@ The project is written in React components, code with style is in partials impor
 
 ![Example screenshot](./osp-app/src/images/PrtScr2.png) 
 
-*tablet verfion
+* tablet version
 
 ![Example screenshot](./osp-app/src/images/PrtScr4.png)   
 
