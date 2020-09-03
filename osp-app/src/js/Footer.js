@@ -45,7 +45,7 @@ export default class Footer extends Component {
                 {/*copyright details:*/}
 
                 <div className="footer_copyright">
-                    <a className="copy__name" href="https://github.com/KatarzynaZapala">&copy;  Katarzyna Danecka-Zapała
+                    <a className="copy__name" href="https://github.com/KatarzynaZapala" target="_blank">&copy;  Katarzyna Danecka-Zapała
                         <FontAwesomeIcon className="gh__icon" icon={faGithub}/>
                     </a>
                 </div>

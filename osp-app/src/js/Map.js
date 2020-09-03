@@ -1,11 +1,13 @@
 import React from "react";
 
-//function getLocation that taking in alert geolocation details of user (geographical width and height):
-//function Map is used in AlarmNumbers component
+/*
+Geolocation API witch return geolocation details of user
+function Map is used in AlarmNumbers component
+ */
 
 function Map() {
 
-//getting location:
+//function that gets location data from user and run function showPosition or show error callback when user browser doesn't support geolocation :
 
     function getLocation() {
         if (navigator.geolocation) {
@@ -15,7 +17,7 @@ function Map() {
         }
     }
 
-//showing location:
+//function that shows user geolocation data in alert:
 
     function showPosition(position) {
         alert("Twoja szerokość geograficzna: " + position.coords.latitude +

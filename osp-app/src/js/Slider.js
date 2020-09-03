@@ -3,12 +3,13 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faChevronLeft} from '@fortawesome/free-solid-svg-icons';
 import {faChevronRight} from '@fortawesome/free-solid-svg-icons';
 
-//hook useState with beginning state ant function to change state
+//hook useState with parameters: actual state and function to change state and with initial state 0:
 
 function Carousel() {
     const [counter, setCounter] = useState(0)
 
-// function that change background-image in returned div:
+
+// variable that change div instead of current counter status
 
     const carousel_element = () => {
         if (counter === 0) {
@@ -83,7 +84,9 @@ function Carousel() {
         }
     };
 
-//hook useEffect to use setTimeout, that change pictures in slider in every 4s. and actualize setCounter:
+/*hook useEffect to use setTimeout, that change pictures in slider after 4s.
+and actualize setCounter by increased current status value by 1;
+function restart when counter change (so counter is a second parameter of useEffect) */
 
     useEffect(() => {
             const timeOut = setTimeout(() => {
@@ -100,7 +103,8 @@ function Carousel() {
         }, [counter]
     )
 
-//methods to change pictures in slider by using arrows:
+/*methods that runs the setCounter method by sending as a parameter the current status value increased or decreased by 1
+(to change pictures in slider by using left or right arrow):*/
 
     const handlePrev = () => {
         if (counter === 0) {
@@ -118,7 +122,7 @@ function Carousel() {
         }
     }
 
-//return div with event onClick
+//return div with arrows that run method on click event
 
     return (
         <div className={"carousel"}>

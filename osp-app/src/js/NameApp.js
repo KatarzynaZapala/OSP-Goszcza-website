@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 //box with popup used in WidgetSection:
 
-//create popup with name taken from props and close popup button:
+//popup with current input value, text and close popup button:
 
 class Popup extends Component {
     render() {
@@ -21,7 +21,8 @@ class Popup extends Component {
     }
 }
 
-//create constructor with super(props) witch references will be send to input by using React.createRef
+// a parent class constructor that has access to this props inside the component by using "super" keyword
+
 
 export default class NameApp extends Component {
     constructor(props) {
@@ -30,8 +31,13 @@ export default class NameApp extends Component {
             showPopup: false
         };
 
+// references to props will be send to input by using React.createRef functionality
+
         this.input = React.createRef()
     }
+
+// update of state by using setState method that takes as a parameter an object with pairs of keys and values that we want to update in our state
+
 
     togglePopup(e) {
         e.preventDefault()
@@ -40,7 +46,10 @@ export default class NameApp extends Component {
         });
     }
 
-//render form with input for name, that will be sent to popup when popup will be showed and change form for popup
+// render form with input for name, that will be sent to popup (as input current value) when popup will be showed
+//conditional rendering: if showPopup false render defined Popup with input current value (name)
+// and closePopup (use binding to make `this` work in the callback)
+
 
     render() {
         return (
