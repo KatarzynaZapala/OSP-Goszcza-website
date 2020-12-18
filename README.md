@@ -4,7 +4,7 @@ A website of a volunteer Search and Rescue Group of a volunteer Fire Grigade in 
 
 The members of the group organize search and rescue operations as well as associate and train volunteers in search and rescue techniques. 
 
-The website is an exploit of the group, it contains all the important information about its activities, such as a description of the group, contact details, types of rescuers and rescue dogs with whom they work. 
+The website is an advertisement of the group, it contains all the important information about its activities, such as a description of the group, contact details, types of rescuers and rescue dogs with whom they work. 
 
 In addition to this information, the user will also find useful information on the website, such as links to the group and fire brigade fun-pages, active emergency telephone numbers, user geolocation or a widget with weather forecast for Goszcza. 
 
